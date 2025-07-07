@@ -1,0 +1,68 @@
+.container {
+    width: 100%;
+    position: relative; /* เปลี่ยนจาก sticky เป็น relative เพื่อให้รองรับทุกขนาดหน้าจอ */
+    z-index: 1000;
+}
+
+nav {
+    width: 100%;
+    background: linear-gradient(150deg, #ffc898, #ff963b);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px; /* ลดขนาดให้เหมาะสม */
+    padding: 0 50px;
+    position: fixed; /* ใช้ fixed แทน sticky เพื่อให้ติดอยู่ด้านบนตลอด */
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* เพิ่มเงาให้ Navbar ดูโดดเด่นขึ้น */
+
+    .logo {
+        display: flex;
+        align-items: center;
+        color: #dd8100;
+        a{
+            text-decoration: none;
+            color: #fff;
+            
+        }
+        
+        h1 {
+            font-weight: 800;
+            font-size: 25px;
+            text-shadow: 1px 1px 2px black;
+            strong {
+                font-weight: 800;
+                color: #000000;
+                text-shadow: 1px 1px 2px black;
+            }
+        }
+    }
+
+    ul {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        gap: 20px; /* ใช้ gap แทน margin-left */
+        padding: 0;
+        margin: 0;
+
+        li {
+            a {
+                text-decoration: none;
+                color: #fff;
+                font-weight: bold;
+                padding: 10px 20px;
+                border-radius: 20px;
+                font-size: 18px;
+                transition: 0.3s ease-in-out;
+
+                &:hover {
+                    background-color: #fff;
+                    color: #ffab62;
+                }
+            }
+        }
+    }
+}

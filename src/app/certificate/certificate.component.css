@@ -1,0 +1,55 @@
+.Certificate{
+    height: 1000px;
+    display: flex;
+     justify-content: center;
+     align-items: center;
+
+     position: relative;
+     background-color: #ffab62;
+     
+     .container{
+        display : flex;
+        justify-content: space-between;
+        align-items: center;
+     }
+     .cert1{
+        img{
+            position: relative;
+        top : 80px;
+            width: 500px;
+            margin-left: 50px;
+            box-shadow: 1px 1px 10px black;
+        }
+     }
+     .cert2{
+        position: relative;
+        top : 80px;
+        img{
+            width: 400px;
+            height: 500px;
+            margin-right: 200px;
+            box-shadow: 1px 1px 10px black;
+            
+        }
+     }
+img:hover{
+    transform: scale(1.1);
+    transition: 0.3s ease;
+}
+     
+     
+
+     h1{
+        position: absolute;
+        top : 130px;
+        font-size: 70px;
+        font-weight: bold;
+        color: #fff;
+        text-shadow: 1px 1px 10px black;
+        
+     }
+    
+    
+ 
+
+}
